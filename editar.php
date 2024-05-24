@@ -14,7 +14,7 @@
     <?php 
     include("conexao.php");
     $id = $_GET["id"] ?? '';
-    $sql = "SELECT * FROM cadas WHERE id = $id";
+    $sql = "SELECT * FROM usuario WHERE id = $id";
 
     $dados = mysqli_query($conexao,$sql);
     $linha = mysqli_fetch_assoc($dados);
