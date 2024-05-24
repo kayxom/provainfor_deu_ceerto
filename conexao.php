@@ -1,17 +1,16 @@
-<?php
-$host ="localhost";
+
+<?php 
+$host = "localhost";
 $user ="root";
-$senha="";
-$banco="cadastro";
+$senha ="";
+$banco = "provainfor";
 
 $conexao = new mysqli($host,$user,$senha,$banco);
-     if(!$conexao){
-        echo 'deu errado'.mysqli_connect_error();
-    //echo'de errado'.mysqli_connect_error();
-}
+    if (!$conexao){
+    //echo 'deu errado'.mysqli_connect_error();
+    echo 'deu errado'.mysqli_connect_error();
+} 
 else{
-    //echo 'deu certo';
-
+    //echo 'deu certo ';
 }
-
 ?>
